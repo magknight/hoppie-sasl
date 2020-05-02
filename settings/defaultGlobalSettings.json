@@ -1,0 +1,11 @@
+{
+    "comments": [
+        "This settings file covers all configurable aspects of hoppie-sasl. This file will regulally be updated by the auto-updater, and is designed",
+        "not to be edited by users. Another file, globalSettings.json exists for user-specific settings."
+    ],
+    "defaultGlobalConfig": {
+        "remoteServer": "http://www.hoppie.nl/acars/system/connect.html",
+        "callsign": "default",
+        "logonCode": "default"
+    }
+}
