@@ -1,0 +1,8 @@
+{
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "lua.format.lineWidth": 400,
+    "lua.format.indentCount": 1,
+    "lua.format.linebreakMultipleAssignments": false,
+    "lua.format.useTabs": true,
+}
