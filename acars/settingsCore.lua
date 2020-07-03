@@ -2,7 +2,7 @@
 -- core setting defines
 ----------------------------------------------------------------------------------
 local json = require "json"
-local configPath = moduleDirectory .. "/../../settings/config.json"
+local configPath = string.gsub(moduleDirectory, "/data/modules/", "") .. "/settings/config.json"
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -- Read
