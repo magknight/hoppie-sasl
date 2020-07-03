@@ -1,2 +1,4 @@
 !/.vscode/*
 settings/globalSettings.json
+configuration/wprefs.ini
+popupsPositions.txt
