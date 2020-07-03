@@ -32,5 +32,28 @@ function network.getAsync(params, callback)
 	print(url)
 	sasl.net.downloadFileContentsAsync(url, callback)
 end
-
+-- -----------------------------------------------------------------------------
+-- Wrap inbound messages to a table
+-- Required to display messages
+-- modified version of http://lua-users.org/wiki/StringRecipes
+-- -----------------------------------------------------------------------------
+function network.wrap(message, limit)
+	local output, here, limit = {}, 1, limit or 31
+	if message:len() < limit then -- if message shorter than limit, just return it
+		return {message}
+	end
+	output[1] = string.sub(message, 1, message:find("(%s+)()(%S+)()") - 1)
+	message:gsub(
+		"(%s+)()(%S+)()",
+		function(white, start, word, last) -- every space
+			if last - here > limit or white:match("\n") then -- new line, use \n if able, space if not, break if else
+				here = start
+				output[#output + 1] = word
+			else
+				output[#output] = output[#output] .. " " .. word
+			end
+		end
+	)
+	return output
+end
 return network

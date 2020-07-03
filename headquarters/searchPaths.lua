@@ -1,0 +1,1 @@
+addSearchPath(moduleDirectory .. "/acars/")
