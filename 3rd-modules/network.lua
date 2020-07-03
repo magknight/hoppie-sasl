@@ -35,6 +35,7 @@ end
 -- -----------------------------------------------------------------------------
 -- Wrap inbound messages to a table
 -- Required to display messages
+-- modified version of http://lua-users.org/wiki/StringRecipes
 -- -----------------------------------------------------------------------------
 function network.wrap(message, limit)
 	local output, here, limit = {}, 1, limit or 31
