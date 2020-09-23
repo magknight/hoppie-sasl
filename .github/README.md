@@ -9,7 +9,7 @@ A library for adding Hoppie CPDLC support to X-Plane aircraft that use SASL for 
 
 ## How do I use it?
 ### From source
-See [/installation]
+See [/installation](../blob/master/installation.md)
 
 ### From releases
-Just put it in your ``X-Plane/Resources/plugins/ folder
+Just put it in your ``X-Plane/Resources/plugins/`` folder
